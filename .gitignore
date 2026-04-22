@@ -1,0 +1,18 @@
+# 1. 先拒绝所有文件和文件夹
+*
+
+# 2. 允许 Git 扫描文件夹（否则它进不去子目录找文件）
+!*/
+
+# 3. 允许上传所有的 .gitignore 自身（建议保留）
+!.gitignore
+
+# 4. 【核心】只允许上传每一课文件夹下的 handout-html
+!*/*-handout.html
+
+# 6. 排除那些烦人的系统和临时文件（双重保险）
+.DS_Store
+.Rhistory
+.quarto/
+*_cache/
+*_files/
